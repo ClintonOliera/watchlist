@@ -39,6 +39,6 @@ class Movie:
         self.id = id_num
         self.name = name
         self.overview = desc
-        self.backdrop_path = img_url
+        self.backdrop_path = 'https://image.tmdb.org/t/p/w500/' + img_url
         self.vote_average = rating
         self.vote_count = audience

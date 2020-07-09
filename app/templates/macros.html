@@ -7,7 +7,7 @@
 <div class="card">
 
     <!-- Card image -->
-    <img src="{{ movie.poster }}" alt="{{ movie.title }} poster" class="img-responsive">
+    <img src="{{ movie.backdrop_path }}" alt="{{ movie.title }} poster" class="img-responsive">
 
     <!-- Card content -->
     <div class="card-body">
@@ -15,8 +15,8 @@
         <!-- Title -->
 
         <!-- Button -->
-        <a href="/movie/{{movie.id}}" style="color: black"
-        class="btn btn-light"> {{ movie.title|truncate(10)}} </a>
+        <a href="/movie/{{movie.id}}" 
+        class="btn btn-info"> {{ movie.name|truncate(10)}} </a>
 
     </div>
 
